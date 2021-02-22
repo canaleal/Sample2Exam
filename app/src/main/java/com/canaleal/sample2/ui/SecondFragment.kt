@@ -18,13 +18,13 @@ import com.canaleal.sample2.databinding.FragmentSecondBinding
 import com.canaleal.sample2.domain.Pet
 import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+
 class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var pet: Pet
+
     private val entryViewModel: PetViewModel by activityViewModels()
 
     override fun onCreateView(
@@ -32,13 +32,13 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        binding.apply {
+            viewModel = entryViewModel
 
+        }
 
         binding.viewModel = entryViewModel  //This is the ItemRollViewModel
         binding.lifecycleOwner = viewLifecycleOwner
-        entryViewModel.selected.observe(viewLifecycleOwner, Observer<Pet> { item ->
-           entryViewModel.update(item)
-        })
 
         return binding.root
     }
