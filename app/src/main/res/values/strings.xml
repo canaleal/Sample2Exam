@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="input_fragment">Input Fragment</string>
+    <string name="output_fragment_label">Output Fragment</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="about">About</string>
+
+    <string name="author">Alex Canales, Sheridan College, 2021</string>
+    <!-- radio button labels / output strings -->
+    <string name="dog">Dog</string>
+    <string name="cat">Cat</string>
+    <string name="enter_pet_name">Enter pet name</string>
+
+    <!-- input / output labels -->
+    <string name="select_message">Select your Choice</string>
+    <string name="message_label">Game Outcome</string>
+    <string name="undefined">Undefined</string>
+
+    <!-- button labels -->
+    <string name="reset">Reset</string>
+    <string name="play">Play</string>
+    <string name="play_again">Play Again</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
